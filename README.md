@@ -26,3 +26,43 @@ Practing the fundamentals of the openCV - Open Source Computer Vision Library us
 15. `object` Module - Used for detection of objects and instances of objects predefined classes for example - face detection, eye detection, and people detection. 
 16. `calib3D` Module - used for camera calibration and 3D reconstruction. Covers basic multiple-view geometry algorithms, stereo correspondence algorithms, object pose estimation, and 3D reconstruction.
 
+## Understanding applications and the libraries
+
+* Feature matching
+The various points of interest in an image are described as features. The descriptor is used to contain information about these keypoints. 
+Eg - Object Detection
+
+* Image Stiching
+Creating panaromic image. It is mostly done using feature matching to get params for matching. 
+
+* 3D Image Stiching
+Same as panaromic stiching but with a third aspect included. 
+
+* Egomotion estimation
+Understanding in which direction the camera was moving while capturing the frames. It is done by 2D frames. 
+
+* Medical Images analysis
+Analysis images using CT scan, etc to find saliency map to find interesting regions of interest.
+
+* HCI and BCI 
+Human computer interaction - blinking to stop video 
+
+* Stereo Vision
+Finding the depth of an image
+
+* Image segmentation and recognition
+Understanding if an animal is dog or something else. Finding different objects in an iamge
+
+* Motion tracking using frame differencing
+Tracking in which direction a thief went as it is not possible to catch from a naked eye. 
+
+## Libraries used
+1. To work with images - NumPy, OpenCV, scikit-image, PIL Pillow
+2. To work with text - NLTK, spaCy, NumPy, scikit-learn, Pytorch
+3. To work with audio - LibROSA
+4. To solve machine learning tasks - pandas, scikit-learn, Orange, Pybrain
+5. To see data clearly - Matplotlib, Seaborn, scikit-learn, Orange
+6. To use deep learning - Tensorflow, Pytorch, Theano, Keras
+7. To do scientifc computing - SciPy
+8. To integrate web applications - Django, Flask
+
