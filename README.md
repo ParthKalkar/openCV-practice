@@ -157,4 +157,4 @@ Mathematically, it means - resampling the image and then assigning the new gray 
 Process of estimating the values of a continuous function f(x, y)
 
 Formula is as follows: 
-![image](https://user-images.githubusercontent.com/50231750/193815110-05541d5c-83e2-46be-8d43-30bf3605ed55.png)
+![Screenshot from 2022-10-04 15-07-06](https://user-images.githubusercontent.com/50231750/193815353-c0d07c1b-fdab-4367-9bc0-faf74b0ab5ce.png)
