@@ -66,3 +66,43 @@ Tracking in which direction a thief went as it is not possible to catch from a n
 7. To do scientifc computing - SciPy
 8. To integrate web applications - Django, Flask
 
+**Note:** Why NumPy is faster is than python? 
+- Because it provides strong support for multi dimensional array operations 
+- 5-100 times faster than Python because it is a collection of similar data-types that are densely packed in memory. 
+- Divides task into multiple sub-tasks
+- Written in C
+
+## Image basics
+
+### What is an image? 
+A 2D representation of a 3D world - Wrong definition. 
+
+A 2D array: X - no of rows, Y - no of columns
+
+A simple image is a 2D function, f(x, y) where (x, y) are the spatial coordinates and the values of f at any point (x, y) is proportional to the brightness or gray levels of the image
+
+$x \in [0, h-1]$
+$y \in [0, w-1]$
+
+$f(x, y) \in [0, l-1]$, where l = 256 (for an 8-bit image) 
+
+### Why only 256 values? 
+1 bit = 2 values (0, 1)
+N bits = 2**N values
+
+Image = 8 bit (1 byte) hence, values = 2**8 = 256
+
+### Difference between image and digital image? 
+The value of f(x, y) will always be a discrete value in digital images. Therefore whenever we say image we mean digital image. 
+
+### RGB model
+Red - rgb(255, 0, 0)
+Green - rgb(0, 255, 0)
+Blue - rgb(0, 0, 255)
+
+Black - rgb(0, 0, 0)
+WHite - rgb(255, 255, 255)
+
+### What is color depth?
+No of bits used to indicate the color of a single image
+Total depth = 3*8 = 24 bits
