@@ -142,3 +142,19 @@ Line_4 and Line_8 are non anti-aliased lines, whereas Line_AA is anti-aliased li
 Line_4 and Line_8 are drawn by - bresenham algorithm
 Line_AA is drawn by - Gaussian filtering algorithm
 
+## Rotation, Translation and scaling
+
+Optical Zoom - Means moving the zoom lens so that it increases the magnification of light before it even reaches the digital sensor.
+
+Digital Zoom - Not really a zoom, it is simply interpolating the image after it has been acquired at the sensor (pixilation process)
+
+### Scaling 
+Refers to the changing the size, i.e increasing or decreasing the pixels in digital image. 
+
+Mathematically, it means - resampling the image and then assigning the new gray values to the resampled position. 
+
+### Interpolation
+Process of estimating the values of a continuous function f(x, y)
+
+Formula is as follows: 
+image.png
