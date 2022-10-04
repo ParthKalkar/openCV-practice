@@ -10,6 +10,8 @@ Practing the fundamentals of the openCV - Open Source Computer Vision Library us
 
 - Activate virtualenv using the following command: `$ source bin/activate`
 
+- Deactivate virtualenv using the following command: `$ deactivate`
+
 - Add files in the virtualvenv by creating a folder name and place the files there
 
 # Notes: 
@@ -117,4 +119,26 @@ White - rgb(255, 255, 255)
 ### What is color depth?
 No of bits used to indicate the color of a single image
 Total depth = 3*8 = 24 bits
+
+## Drawing on an image
+
+Every image has 3 channels as discussed above. We can draw a line, a rectangle, a circle, an arrowed line, etc 
+
+Every function has the following parameters:
+1. Image - to be drawn on
+2. Points - to de drawn from p1(x1, y1) to p2(x2, y2)
+3. Color - triplet of values (0-255, 0-255, 0-255)
+4. Thickness - how thick the line should be
+5. Line type - There are normally 3 line types in openCV. Quadrapal, Octapal and AA line. 
+
+**Concept:** Aliasing and Anti-aliasing 
+
+Aliasing is the visual stair-stepping of edges that occurs in an image when the resolution is too low. Anti-aliasing is the smoothing of jagged edges in digital images by averaging the colors of the pixels at a boundary.
+
+When are there are no transparent pixels, we call such a line as a aliased line 
+
+Line_4 and Line_8 are non anti-aliased lines, whereas Line_AA is anti-aliased line. 
+
+Line_4 and Line_8 are drawn by - bresenham algorithm
+Line_AA is drawn by - Gaussian filtering algorithm
 
