@@ -1,6 +1,17 @@
 # openCV-practice
 Practing the fundamentals of the openCV - Open Source Computer Vision Library using the python programming langauge
 
+**Important:** 
+- Download and install openCV using the following command: `$  sudo apt-get install python3-opencv`
+
+- Download and install virtualenv using the following command: `$ sudo apt-get install python3-venv`
+
+- Create virtualenv using the following command: `$ python3 -m venv "name_of_folder"` 
+
+- Activate virtualenv using the following command: `$ source bin/activate`
+
+- Add files in the virtualvenv by creating a folder name and place the files there
+
 # Notes: 
 
 ## What is open CV
@@ -101,8 +112,9 @@ Green - rgb(0, 255, 0)
 Blue - rgb(0, 0, 255)
 
 Black - rgb(0, 0, 0)
-WHite - rgb(255, 255, 255)
+White - rgb(255, 255, 255)
 
 ### What is color depth?
 No of bits used to indicate the color of a single image
 Total depth = 3*8 = 24 bits
+
