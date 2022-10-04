@@ -159,3 +159,6 @@ Process of estimating the values of a continuous function f(x, y)
 Formula is as follows: 
 
 ![Screenshot from 2022-10-04 15-07-06](https://user-images.githubusercontent.com/50231750/193815353-c0d07c1b-fdab-4367-9bc0-faf74b0ab5ce.png)
+
+![Screenshot from 2022-10-04 15-08-57](https://user-images.githubusercontent.com/50231750/193815700-ff9b7d49-796a-4ce4-89f7-d6a9cdcf4759.png)
+
