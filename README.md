@@ -236,3 +236,31 @@ To apply this mathematical operation, we use another matrix called as kernel.
 Because, the intent of convolution is to encode source data matrix (entire image) in terms of a filter or kernel. More specifically, we are trying to encode the pixels in the neighborhood of anchor/source pixels.
 
 ![convolution](con.png)
+
+**Note:** The kernel is called as the "**image filter**" and the process of applying this kernel to the image is called as "**image filtering**". The output obtained after applying the kernel to the image is called the "**filtered image**" 
+
+### Low Pass Filter
+Is the type of frequency domain filter that attenuates the high frequency components and preserves the low frequency components.
+Cutting out high frequency components and allowing low frequency components. 
+
+Characteristics: 
+- Used for smoothing the image
+- Used for blurring the image
+- Removal of aliasing effect
+- allows the frequency below cut off frequency to pass through it
+
+### High Pass Filter
+Is the type of frequency domain filter that attenuates the low frequency components and preserves the high frequency components.
+Cutting out low frequency components and allowing high frequency components. 
+
+Characteristics: 
+- Used for sharpening the image
+- Used for edge detection
+- Removal of noise 
+- allows the frequency above cut off frequency to pass through it
+
+### Application of filters
+The following function can be used - `cv2.filter2D(src, ddepth, kernel, anchor, border_type)`
+
+**Remember normalising filters before applying to image for stable results. **
+
