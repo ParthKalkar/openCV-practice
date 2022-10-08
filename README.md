@@ -210,4 +210,11 @@ Characteristics:
 - Angles remains preserved
 - Shapes remains preserved
 
+### What is affine transformation? 
+It has 6 degrees of freedom - two for translation, one for rotation and one for scaling, one for scaling direction and one for scaling ratio. 
+
+The matrix can be rotated, scaled, translated, sheared
+
+Parralel lines preserved but may be sheared. i.e squares may become parallelogram
+
 
