@@ -295,5 +295,28 @@ This operator is also a derivative operator which is used to find edge in an ima
 
 The major difference between this operator and the others is that this is a second order derivative mask. 
 
+### Canny Edge Detection
+The 5 stages of canny edge detection are as follows: 
+- Noise Reduction
+- Gradient Calculation
+- Non-Maximum Suppression
+- Double Thresholding and Edge Tracking Hysteresis
 
+#### Noise Reduction
+Since edge detection is susceptible to noise in the image, first step is to remove the noise with a `Gaussian` filter. 
+
+#### Gradient Calculation
+Smoothened image is then filtered with a Sobel kernel in both X and Y directions to get derivatives **Gx** and **Gy**
+
+From this we get Gradient intensity matrix and gradient angles
+
+#### Non-Max suppression
+The final image should have thin edges, thus we perform non-max suppression. 
+
+The algorithm goes through all the points in the image and finds the pixel with the maximum value of gradient in the edge directions.
+
+#### Double Thresholding and Hysteresis
+We need 2 thresholding values, minVal and maxVal. Any edges with intensity gradient more than maxVal are sure to be edges ad those below minVal are non-edges so discard them. 
+
+Those who lie between minVal and maxVal are classified edges or non-edges based on their connectivity. 
 
