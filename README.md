@@ -264,3 +264,36 @@ The following function can be used - `cv2.filter2D(src, ddepth, kernel, anchor, 
 
 **Remember normalising filters before applying to image for stable results. **
 
+### What is edge detection? 
+The process of edge detection involves detecting the sharp edges (edges where intensity changes) in the image and producing a binary image as an output. 
+
+Typically we draw white lines on a black background to indicate those edges. 
+
+**Note:** A high change in gradient indicates a major change in the image intensities (edges)
+
+### Types of edge detection
+1. Sobel Edge filters (Sobel x and Sobel y)
+2. Scharr edge filters 
+3. Laplacian filters
+
+#### Sobel Edge Filter
+Computes an approximation of the gradient of an image intensity function. 
+
+It is dependent on first order derivatives
+
+Demerits: 
+1. Signal to noise ratio
+2. Not accurate results and discontinuity 
+
+#### Scharr Edge Filter
+This operator is believed to be better than Sobel
+
+This operator is dependent on first order derivatives
+
+#### Laplacian Filter
+This operator is also a derivative operator which is used to find edge in an image. 
+
+The major difference between this operator and the others is that this is a second order derivative mask. 
+
+
+
