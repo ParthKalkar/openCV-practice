@@ -218,3 +218,21 @@ The matrix can be rotated, scaled, translated, sheared
 Parralel lines preserved but may be sheared. i.e squares may become parallelogram
 
 ![affine transformation](affine.png)
+
+## Convolution and Filtering
+- Understanding Convolution 
+- Low pass and high pass filters
+- Blurring using normalized filters
+- Motion Blurring
+
+### What is convolution? 
+Convolution is a fundamental operation in image processing. 
+
+We basically apply a mathematical operation to each pixel and change its value in some way. 
+
+To apply this mathematical operation, we use another matrix called as kernel. 
+
+#### Why are kernel dimensions always odd? 
+Because, the intent of convolution is to encode source data matrix (entire image) in terms of a filter or kernel. More specifically, we are trying to encode the pixels in the neighborhood of anchor/source pixels.
+
+![convolution](con.png)
