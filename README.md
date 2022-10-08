@@ -203,7 +203,7 @@ To apply the translation matrix we use the `cv2.warpAffine` function.
 ### What is Euclidean or isometric transformation? 
 In mathematics, a rigid transformation (also called Euclidean transformation or Euclidean isometry) is a geometric transformation of a Euclidean space that preserves the Euclidean distance between every pair of points.
 
-![transformation](/home/parth/Parth/Repo/openCV-practice/2d-rot-tran.jpg)
+![transformation](2d-rot-tran.jpg)
 
 Characteristics: 
 - Distance remains preserved
