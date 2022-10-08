@@ -168,3 +168,17 @@ Formula is as follows:
 3. Cubic interpolation
 4. Nearest Neighbor interpolation
 5. Sinusoidal interpolation
+
+### Translation
+Shift an image in coordinate space by adding a specified value to the x-coordinate and y-coordinate
+
+#### Image translation
+- Translation matrix (M)
+- Apply M to the image 
+
+$$
+\left(\begin{array}{cc} 
+1 & 0 & tx\\
+0 & 1 & ty\\
+\end{array}\right)
+$$
