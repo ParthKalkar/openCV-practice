@@ -188,3 +188,8 @@ tx = translation along the x-axis
 ty = translation along the y-axis
 
 To apply the translation matrix we use the `cv2.warpAffine` function. 
+
+**Note:** Whenever we use `cv2.warpAffine` we need to make sure that the translation matrix is of `2 rows` and `3 columns`
+
+
+
