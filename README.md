@@ -184,6 +184,7 @@ $$
 $$
 
 tx = translation along the x-axis
+
 ty = translation along the y-axis
 
 To apply the translation matrix we use the `cv2.warpAffine` function. 
