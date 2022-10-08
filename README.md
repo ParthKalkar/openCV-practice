@@ -191,5 +191,23 @@ To apply the translation matrix we use the `cv2.warpAffine` function.
 
 **Note:** Whenever we use `cv2.warpAffine` we need to make sure that the translation matrix is of `2 rows` and `3 columns`
 
+## Transforms
+1. Euclidean transformation
+2. Affine transformation
+3. Projective transformation
+
+### What is transformation?
+1. Modify spatial relationship between pixels
+2. Image can be shifted, rotated, and stretched in multiple ways
+
+### What is Euclidean or isometric transformation? 
+In mathematics, a rigid transformation (also called Euclidean transformation or Euclidean isometry) is a geometric transformation of a Euclidean space that preserves the Euclidean distance between every pair of points.
+
+![transformation](/home/parth/Parth/Repo/openCV-practice/2d-rot-tran.jpg)
+
+Characteristics: 
+- Distance remains preserved
+- Angles remains preserved
+- Shapes remains preserved
 
 
