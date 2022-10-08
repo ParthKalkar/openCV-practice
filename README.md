@@ -162,3 +162,9 @@ Formula is as follows:
 
 ![Screenshot from 2022-10-04 15-08-57](https://user-images.githubusercontent.com/50231750/193815700-ff9b7d49-796a-4ce4-89f7-d6a9cdcf4759.png)
 
+#### Types of interpolation 
+1. Linear interpolation
+2. Area interpolation
+3. Cubic interpolation
+4. Nearest Neighbor interpolation
+5. Sinusoidal interpolation
