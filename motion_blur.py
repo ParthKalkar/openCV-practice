@@ -14,6 +14,7 @@ output = cv2.filter2D(img, -1, kernel)
 
 cv2.imshow('Input', img)
 cv2.imshow('Output', output)
+cv2.imshow('Grayscale', gray)
 
 if cv2.waitKey() == ord('q'):
     cv2.destroyAllWindows()
