@@ -217,4 +217,4 @@ The matrix can be rotated, scaled, translated, sheared
 
 Parralel lines preserved but may be sheared. i.e squares may become parallelogram
 
-
+![affine transformation](affine.png)
