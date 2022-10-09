@@ -422,3 +422,12 @@ Uses of histogram equalisation is for contrast enhancement in medical images and
 
 Also for feature enhancement in detection tasks
 
+ ### Adaptive histogram equalization
+ Image is divided into small blocks called tiles. Then each of these blocks are equalized as usual. 
+
+ Problems in AHE - noise is overamplified
+
+ ### Contrast limited adaptive histogram equalization
+ CLAHE solves problem of impurity maximisattion by cliping extra values. 
+
+ If any histogram bin is above the specified contrast limit, those pixesl are clipped and distributed uniformly to other bins before applying the histogram equalization. 
