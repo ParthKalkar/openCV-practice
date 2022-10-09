@@ -431,3 +431,54 @@ Also for feature enhancement in detection tasks
  CLAHE solves problem of impurity maximisattion by cliping extra values. 
 
  If any histogram bin is above the specified contrast limit, those pixesl are clipped and distributed uniformly to other bins before applying the histogram equalization. 
+
+ ## Image Thresholding
+
+ ### What is image segmentation? 
+ Image segmentation is to modify the representation of an image into another representation that is easier to process. 
+
+ For example, it is commonly used to extract objects from the background based on some properties of the object (for example, color, edges and histogram)
+
+ ### What is thresholding? 
+ Thresholding is easiest form of image segmentation based on intensity value of pixels. 
+
+ ### Types of thresholding
+ 1. Global Thresholding - Manual, Otsu, Triangle
+ 2. Adaptive Thresholding - Mean , Gaussian, Niblack, Sauvola
+
+ #### Global Thresholding using Manual
+ Implmentation is as follows:
+ `ret, thresh = cv2.threshold(gray_image, threh, maxval, type)`
+
+ the `type`parameter takes either `THRESH_BINARY`, `THRESH_BINARY_INV`, `THRESH_TRUNC`, `THRESH_TOZERO`
+
+ If value of a pixel is less than threshold make it `black` else make it `maxVal`
+
+##### Variants of thresholding
+1. THRESH_BINARY - if value of pixel is less than threshold make it `black` else make it `maxVal`
+
+2. THRESH_BINARY_INV - if value of pixel is more than threshold make it `black` else make it `maxVal`
+
+3. THRESH_TRUNCH - if value of pixel is greater than threshold make it `threshold` else keep it `as it is`
+
+4. THRESH_TOZERO - if value of pixel is greater than threshold keep it `as it is` else make it `black`
+
+5. THRESH_TOZERO_INV - if value of pixel is less than threshold keep it `as it is` else make it `black`
+
+#### Adaptive threshold
+Rather than applying one threshold to whole image, computes threshold for small parts and applies.
+
+Implementation is as follows:
+`cv2.adaptiveThreshold(gray_image, maxVal, adaptiveMethod, thresholdType, blockSize, C)`
+
+##### Adaptive Methods
+1. `cv2.ADAPTIVE_THRESH_MEAN_C` - threshold is calculated as the mean of blocksize neighborhood minus C parameter
+
+2. `cv2.ADAPTIVE_THRESH_GAUSSIAN_C` - threshold is calculated as the gaussian weighted sum of blocksize neighborhood minus C parameter. 
+
+`C` - just a constant to be subtracted, subtracts impurities
+
+
+
+
+
