@@ -329,3 +329,69 @@ It is done by multiple a gaussian kernel with the image.
 To increase the radius we can just change the standard deviation of that function. 
 
 To change focus we scale the kernel and cut a part of the kernel. 
+
+## Morphological Transformations
+It is a broad set of image processing operations that process binary images based on structuring element or kernel structure which decides the nature of the operation
+
+In morphological operations, each pixel in the image is adjusted based on the value of other pixels in the neighborhood. 
+
+### Types of morphological operations
+1. Dilation 
+2. Erosion
+3. Opening 
+4. Closing
+5. Gradient
+6. Top Hat
+7. Black Hat
+
+**Note:** There are only main operations dilation and erosion. All other operations are based on them. 
+
+#### Erosion 
+A pixel in the original image(either 255 or 0) will be considered 255 only if all pixels under the kernel is 255 otherwise it is eroded (made to zero)
+
+Erosion is thinning
+
+`erosion = cv2.erode(img, kernel, iterations)`
+
+#### Dilation
+Just the opposite of erosion. Here a pixel element is 255 if atleast one pixel under the kernel is 255
+
+Dilation is fattening 
+
+`dilation = cv2.dilate(img, kernel, iterations)`
+
+#### Opening
+Erosion followed by dilation
+
+Many times used in noise removal 
+
+`opening = cv2.morpholodyEx(img, cv2.MORPH_OPEN, kernel)`
+
+#### Closing
+Reverse of opening. Dilation followed by erosion
+
+Filling patches in the foreground object mask
+
+`closing = cv2.morpholodyEx(img, cv2.MORPH_CLOSE, kernel)`
+
+#### Gradient
+Dilated Image - Eroded Image (dilated minus eroded image)
+
+To find outlines of objects
+
+`gradient = cv2.morpholodyEx(img, cv2.MORPH_GRADIENT, kernel)`
+
+#### Top Hat
+Difference between the input image and its opening
+
+Highlights minor details in image
+
+`tophat = cv2.morpholodyEx(img, cv2.MORPH_TOPHAT, kernel)`
+
+#### Black Hat
+Difference between the closing and the input image
+
+To find bright objects on dark background
+
+`blackhat = cv2.morpholodyEx(img, cv2.MORPH_BLACKHAT, kernel)`
+
