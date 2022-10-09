@@ -320,3 +320,12 @@ We need 2 thresholding values, minVal and maxVal. Any edges with intensity gradi
 
 Those who lie between minVal and maxVal are classified edges or non-edges based on their connectivity. 
 
+### Vigenette Effect
+
+Vignetting refers to the fall-off pixel intensity from the centre towards the edges of the image. This effect is undesirable in image processing and analysis. In the literature, the most commonly used methods of vignetting correction assume radial characteristic of vignetting
+
+It is done by multiple a gaussian kernel with the image. 
+
+To increase the radius we can just change the standard deviation of that function. 
+
+To change focus we scale the kernel and cut a part of the kernel. 
