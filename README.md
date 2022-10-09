@@ -478,6 +478,12 @@ Implementation is as follows:
 
 `C` - just a constant to be subtracted, subtracts impurities
 
+#### Otsu Thresholding
+Otsu method is applied to the images which are bi-modal. i.e the image is having two peaks in the histogram. 
+
+#### Triangle Thresholding
+A line is drawn from the higest bar to the end of the histogram. Then for choosing the optimal threshold, distance of each bar is calculated from the line, whichever is largest becomes the threshold value. 
+
 
 
 
