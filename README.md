@@ -395,3 +395,30 @@ To find bright objects on dark background
 
 `blackhat = cv2.morpholodyEx(img, cv2.MORPH_BLACKHAT, kernel)`
 
+## Bitwise Operations
+A bitwise operation is used to perform bitwise operations on binary numerals that involve the manipulation of individual bits. 
+
+### What does it mean to openCV images?
+Broadly when we do masking we see for either black (0) or white (255) or any colour and perform operation accordingly.
+
+### Types of Bitwise Operations: 
+1. Bitwise AND operation
+`bitwise_and = cv2.bitwise_and(img1, img2)`
+
+2. Bitwise OR operation
+`bitwise_or = cv2.bitwise_xor(img1, img2)`
+
+## Image histograms
+An image histogram is a type of histogram that reflects the intensity distribution of the image, plotting the number of pixels for reach intensity value. 
+
+### What is brightness? 
+The brightness of a grayscale image can be defined as the average intensity of all the pixels of the image. 
+
+### Histogram equalization
+Normalizes the brightness and also increases the contrast of the image
+`cv2.equalizeHist()`
+
+Uses of histogram equalisation is for contrast enhancement in medical images and satellite images. 
+
+Also for feature enhancement in detection tasks
+
