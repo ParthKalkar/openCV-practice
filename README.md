@@ -532,3 +532,14 @@ hierarchy[i][1]: Index of the previous contour at the   same hierarchical level
 hierarchy[i][2]: Index of the first child contour
 
 hierarchy[i][3]: Index of the parent contour
+
+### Contour compression methods
+Detected contours can be compressed to reduce the number of points. In this sense, openCV provides several methods to reduce the number of points. This can be set with the parameter method. 
+
+1. `CHAIN_APPROX_NONE` - all boundary points are stored, hence no compression is applied
+
+2. `CHAIN_APPROX_SIMPLE` - compresses horizontal, vertical, and diagonal segments and leaves only their end points. For example, an up-right rectangular contour is encoded with 4 points.
+
+3. `CHAIN_APPROX_TC89L1` - applies one of the flavors of the Teh-Chin chain approximation algorithm
+
+4. `CHAIN_APPROX_TC89_COS` - applies one of the flavors of the Teh-Chin chain approximation algorithm
