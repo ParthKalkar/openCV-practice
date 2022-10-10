@@ -484,7 +484,38 @@ Otsu method is applied to the images which are bi-modal. i.e the image is having
 #### Triangle Thresholding
 A line is drawn from the higest bar to the end of the histogram. Then for choosing the optimal threshold, distance of each bar is calculated from the line, whichever is largest becomes the threshold value. 
 
+## Object Tracking
+It is a computer vision technique for locating objects in images or videos os simply tracking an object in a live video
 
+### Frame DIfferencing - Object Tracking
+
+Algorithm:
+1. Capture previous frame, current frame and next frame using camera instance
+2. Transform their colorspace and resize them.
+3. Find absolute difference between (current, previous) and (next, current) frames
+4. Do a bitwise AND operation between both the results of step 3
+5. The black pixels in result is for background and other grayvalues are for object which is moving. 
+
+## Contours
+
+### What is contour? 
+It is a boundary around something that has well defined edges so the machine is able to calculate difference in gradient and form a recognisable shape through continuing change and draw a boundary around it. 
+
+### Why contour detection is applied to binary images and not grayscale images? 
+Contour detection is used for edge detection. To detect edges it is umportant that the image is binary and not grayscale. 
+
+### openCV functions    
+1. `findContours()` : params - 
+Image: the binary image
+mode: this is the contour retreival mode
+method: this defines the contour approximation method
+
+2. `drawContours()` : params -
+Image: this is the input RGB image
+contours: the contours obtained from the `findContours()` function
+contouridx: Indicating exactly which contour point you want to draw. Providing a negative value will draw all the contour points
+color: color of the contour points you want to draw
+thickness: this is the thickness of the points drawn 
 
 
 
