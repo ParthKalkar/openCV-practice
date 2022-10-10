@@ -517,5 +517,18 @@ contouridx: Indicating exactly which contour point you want to draw. Providing a
 color: color of the contour points you want to draw
 thickness: this is the thickness of the points drawn 
 
+### Contour retreival mode
+1. Retrieve External (`RETR_EXTERNAL`) - outpurs only external the contous
+2. Retrieve List (`RETR_LIST`) - outputs all the contours without any hierarchical relationship
+3. Retrieve Tree (`RETR_TREE`) - outputs all the contours by establishing a hierarchical relationship
 
+#### Retrieve Hierarchy
+The output vector heirarchy contains - hierarchical relationship, for each detected contour. For each ith contour contours[i], h hierarchy[i][j] with j in range [0,3] contains the following: 
 
+hierarchy[i][0]: Index of the next contour at the same hierarchical level
+
+hierarchy[i][1]: Index of the previous contour at the   same hierarchical level
+
+hierarchy[i][2]: Index of the first child contour
+
+hierarchy[i][3]: Index of the parent contour
