@@ -1,5 +1,5 @@
 # openCV-practice
-Practing the fundamentals of the openCV - Open Source Computer Vision Library using the python programming langauge
+Practicing the fundamentals of the openCV - Open Source Computer Vision Library using the python programming langauge
 
 **Important:** 
 - Download and install openCV using the following command: `$  sudo apt-get install python3-opencv`
